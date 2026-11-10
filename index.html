@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Event Rent Palermo | Noleggio Photobooth, Audio & Luci per Feste</title>
+    <meta name="description" content="Noleggio Photobooth 360, Casse Audio Potenti, Luci ed Effetti Speciali per feste ed eventi a Palermo e Provincia. Consegna a domicilio e montaggio incluso.">
+    <meta name="google-site-verification" content="5e27XxW2R7jBcdGY7uUvE0usKO7MpclipcDLONQWWco" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neon: {
+                            purple: '#8b5cf6',
+                            magenta: '#ec4899',
+                            cyan: '#38bdf8',
+                            green: '#10b981',
+                            whatsapp: '#25D366',
+                            dark: '#070a13',
+                            card: '#0f172a',
+                            cardHover: '#1e293b'
+                        }
+                    },
+                    boxShadow: {
+                        'neon-magenta': '0 0 20px rgba(236, 72, 153, 0.35)',
+                        'neon-purple': '0 0 20px rgba(139, 92, 246, 0.35)',
+                        'neon-cyan': '0 0 20px rgba(56, 189, 248, 0.35)',
+                        'neon-green': '0 0 25px rgba(16, 185, 129, 0.5), 0 0 45px rgba(16, 185, 129, 0.25)',
+                        'whatsapp-glow': '0 0 20px rgba(37, 211, 102, 0.5)'
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 3s infinite alternate',
+                        'float': 'float 4s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%': { boxShadow: '0 0 15px rgba(16, 185, 129, 0.4)' },
+                            '100%': { boxShadow: '0 0 35px rgba(37, 211, 102, 0.8)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-8px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Inter + Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #070a13;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(139, 92, 246, 0.15) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .gradient-text-magenta {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-cyan {
+            background: linear-gradient(135deg, #38bdf8, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        :root {
+            --apple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+            --apple-duration: 480ms;
+        }
+        .glass-header.glass-header {
+            background: rgba(15, 23, 42, 0.75);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-surface.glass-surface {
+            background-color: rgba(15, 23, 42, 0.75);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+        }
+        a, button {
+            transition-duration: var(--apple-duration) !important;
+            transition-timing-function: var(--apple-ease) !important;
+        }
+        a:hover, button:hover {
+            scale: 1.02;
+            translate: 0 -2px;
+        }
+        a:active, button:active {
+            scale: 0.96;
+            translate: 0 0;
+            transform: none;
+        }
+        .hero-photo img {
+            animation: hero-photo-drift 18s ease-in-out infinite alternate;
+            transform-origin: center;
+        }
+        .interactive-card {
+            transition-property: translate, box-shadow, border-color;
+            transition-duration: var(--apple-duration);
+            transition-timing-function: var(--apple-ease);
+        }
+        .interactive-card:hover {
+            translate: 0 -4px;
+            scale: 1.02;
+            border-color: rgba(168, 85, 247, 0.65);
+            box-shadow: 0 14px 34px rgba(139, 92, 246, 0.16);
+        }
+        .has-scroll-reveal .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(18px);
+            transition-property: opacity, transform, translate, box-shadow, border-color;
+            transition-duration: var(--apple-duration);
+            transition-timing-function: var(--apple-ease);
+        }
+        .has-scroll-reveal .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .has-scroll-reveal .reveal-on-scroll.reveal-delay-1 { transition-delay: 80ms; }
+        .has-scroll-reveal .reveal-on-scroll.reveal-delay-2 { transition-delay: 160ms; }
+        .has-scroll-reveal .reveal-on-scroll.reveal-delay-3 { transition-delay: 240ms; }
+        @keyframes hero-photo-drift {
+            from { transform: scale(1.01); }
+            to { transform: scale(1.055); }
+        }
+        .logo-wave {
+            position: absolute;
+            top: 50%;
+            border-left: 2px solid #a855f7;
+            border-radius: 50% 0 0 50%;
+            transform: translateY(-50%);
+            filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.8));
+            animation: logo-wave-pulse 1.4s ease-in-out infinite alternate;
+        }
+        .logo-wave-inner {
+            left: 25px;
+            width: 8px;
+            height: 18px;
+        }
+        .logo-wave-outer {
+            left: 17px;
+            width: 16px;
+            height: 30px;
+            border-left-color: #d946ef;
+            animation-delay: 0.3s;
+        }
+        @keyframes logo-wave-pulse {
+            from { opacity: 0.55; }
+            to { opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .logo-wave,
+            .hero-photo img { animation: none; }
+            a, button,
+            .interactive-card,
+            .has-scroll-reveal .reveal-on-scroll {
+                transition-property: none !important;
+                transition-duration: 0.01ms !important;
+                transition-timing-function: linear !important;
+            }
+            a:hover, button:hover, a:active, button:active,
+            .interactive-card:hover { scale: none; translate: none; }
+            .has-scroll-reveal .reveal-on-scroll { opacity: 1; transform: none; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-neon-green selection:text-black">
+
+    <div class="sticky top-0 z-50 glass-header">
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-neon-purple via-neon-magenta to-neon-purple text-white text-xs sm:text-sm font-bold py-2.5 px-4 text-center shadow-md">
+        <div class="container mx-auto flex items-center justify-center gap-2">
+            <span class="inline-block animate-pulse text-yellow-300"><i class="fa-solid fa-truck-fast"></i></span>
+            <span>Consegna & Montaggio GRATUITO a <strong>Palermo, Carini, Bagheria, Mondello, Monreale, Cefalù</strong> e Provincia!</span>
+            <a href="https://wa.me/393914795664?text=Ciao!%20Vorrei%20informazioni%20per%20un%20noleggio%20festa%20a%20Palermo" target="_blank" class="hidden md:inline-flex items-center gap-1 bg-black/30 px-2.5 py-0.5 rounded-full hover:bg-black/50 transition">
+                <i class="fa-brands fa-whatsapp text-neon-whatsapp"></i> Risposta in <5 min
+            </a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="bg-transparent border-b border-white/10 transition-all">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5">
+                <span class="relative h-12 w-20 shrink-0 overflow-hidden" aria-hidden="true">
+                    <img src="logo-cassa.png" alt="" class="absolute left-[50px] top-1/2 w-[200px] max-w-none -translate-x-1/2 -translate-y-1/2">
+                    <span class="logo-wave logo-wave-inner"></span>
+                    <span class="logo-wave logo-wave-outer"></span>
+                </span>
+                <div class="flex flex-col">
+                    <span class="font-heading font-extrabold text-xl tracking-wider text-white">PARTY<span class="text-neon-magenta">RENT</span></span>
+                    <span class="text-[10px] text-neon-cyan font-bold tracking-widest uppercase">Palermo & Provincia</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden lg:flex items-center gap-8 font-semibold text-sm text-gray-200">
+                <a href="#pacchetti" class="hover:text-neon-green transition-colors">Pacchetti Festa</a>
+                <a href="#catalogo" class="hover:text-neon-green transition-colors">Prodotti Singoli</a>
+                <a href="#come-funziona" class="hover:text-neon-green transition-colors">Come Funziona</a>
+                <a href="#feedback" class="hover:text-neon-green transition-colors">Feedback</a>
+                <a href="#faq" class="hover:text-neon-green transition-colors">FAQ</a>
+            </div>
+
+            <!-- Header Action Button (Emerald High-Conversion CTA) -->
+            <div class="flex items-center gap-3">
+                <a href="#preventivo" class="hidden sm:inline-flex items-center gap-2 bg-neon-green hover:bg-emerald-400 text-black text-xs sm:text-sm font-extrabold px-5 py-2.5 rounded-full shadow-neon-green transition transform active:scale-95">
+                    <i class="fa-regular fa-calendar-check"></i> Verifica Data Ora
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl focus:outline-none p-1">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-neon-card border-b border-white/10 px-4 py-4 space-y-3 font-semibold text-white">
+            <a href="#pacchetti" class="block py-2 border-b border-white/5 hover:text-neon-green">Pacchetti Festa</a>
+            <a href="#catalogo" class="block py-2 border-b border-white/5 hover:text-neon-green">Catalogo Attrezzature</a>
+            <a href="#come-funziona" class="block py-2 border-b border-white/5 hover:text-neon-green">Come Funziona</a>
+            <a href="#feedback" class="block py-2 border-b border-white/5 hover:text-neon-green">Lascia un feedback</a>
+            <a href="#faq" class="block py-2 border-b border-white/5 hover:text-neon-green">Domande Frequenti</a>
+            <a href="#preventivo" class="block w-full text-center bg-neon-green text-black font-extrabold py-3 rounded-xl mt-2 shadow-neon-green">
+                Verifica Disponibilità Data
+            </a>
+        </div>
+    </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-[90vh] flex items-center justify-center bg-grid-pattern pt-8 pb-16 overflow-hidden">
+        <!-- Ambient Light Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neon-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-neon-magenta/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-20 left-10 w-72 h-72 bg-neon-cyan/15 rounded-full blur-[110px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <!-- Local Tag -->
+                    <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-xs font-semibold text-neon-cyan backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-neon-green animate-ping"></span>
+                        <i class="fa-solid fa-location-dot"></i> Attivi in tutta Palermo & Provincia
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-heading font-black text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.15]">
+                        Trasforma la Tua Festa a <span class="gradient-text-magenta">Palermo</span> in un Evento <span class="gradient-text-cyan">Leggendario</span>.
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Noleggio <strong>Photobooth 360</strong>, <strong>Casse Audio High-Power</strong>, <strong>Effetti Speciali & Luci Club</strong> per 18esimi, compleanni, lauree e matrimoni. Consegniamo, montiamo e ritiriamo tutto noi!
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#pacchetti" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-neon-magenta via-neon-purple to-neon-cyan text-white font-extrabold text-base shadow-neon-magenta hover:opacity-95 transition transform hover:-translate-y-0.5 text-center">
+                            <i class="fa-solid fa-sparkles mr-2"></i> Scopri I Pacchetti Festa
+                        </a>
+                        <a href="#preventivo" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold text-base backdrop-blur-sm transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-calendar text-neon-cyan"></i> Verifica Data
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div class="space-y-1">
+                            <div class="text-neon-cyan font-bold text-lg sm:text-xl"><i class="fa-solid fa-truck-ramp-box text-sm mr-1"></i> 100%</div>
+                            <div class="text-xs text-gray-400">Zero Stress Logistico</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-neon-magenta font-bold text-lg sm:text-xl"><i class="fa-solid fa-plug text-sm mr-1"></i> Plug & Play</div>
+                            <div class="text-xs text-gray-400">Pronto all'Uso in 5 Minuti</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-neon-green font-bold text-lg sm:text-xl"><i class="fa-solid fa-headset text-sm mr-1"></i> H24</div>
+                            <div class="text-xs text-gray-400">Assistenza Tecnica Inclusa</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Element / Showcase Mockup -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Card Showcase -->
+                        <div class="glass-surface bg-neon-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/10 shadow-2xl relative z-10 animate-float">
+                            <div class="hero-photo relative h-64 sm:h-72 rounded-2xl overflow-hidden mb-6 group">
+                                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Festa Palermo DJ Photobooth" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                                </div>
+                            </div>
+
+                            <!-- Card Specs Badge Row -->
+                            <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-gray-300">
+                                <span class="bg-white/5 px-2.5 py-1 rounded-md border border-white/5"><i class="fa-solid fa-check text-neon-green mr-1"></i> Audio 1500W</span>
+                                <span class="bg-white/5 px-2.5 py-1 rounded-md border border-white/5"><i class="fa-solid fa-check text-neon-green mr-1"></i> Video 360 HD</span>
+                                <span class="bg-white/5 px-2.5 py-1 rounded-md border border-white/5"><i class="fa-solid fa-check text-neon-green mr-1"></i> Fumo Scena</span>
+                            </div>
+                        </div>
+
+                        <!-- Glow Background Effect -->
+                        <div class="absolute -inset-2 bg-gradient-to-r from-neon-magenta to-neon-cyan rounded-3xl blur-2xl opacity-40 -z-10"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- LOCAL COVERAGE BAR -->
+    <section class="py-6 bg-neon-card/50 border-y border-white/10 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-xs text-gray-400 font-semibold tracking-widest uppercase mb-4">
+                Consegna rapida & Assistenza in tutti i comuni della Provincia
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-3 md:gap-8 text-xs font-medium text-gray-300 opacity-80">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-magenta"></i> Palermo Centro</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-cyan"></i> Mondello & Sferracavallo</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-purple"></i> Carini & Villagrazia</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-magenta"></i> Bagheria & Misilmeri</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-cyan"></i> Monreale & San Giuseppe J.</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-neon-purple"></i> Cefalù & Termini I.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES & PRICING SECTION -->
+    <section id="pacchetti" class="py-20 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-block px-3 py-1 bg-neon-purple/20 border border-neon-purple/40 rounded-full text-neon-purple text-xs font-bold uppercase tracking-widest">
+                    Zero Sorprese • Tutto Incluso
+                </div>
+                <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                    I Nostri Pacchetti <span class="gradient-text-magenta">Festa Tutto Incluso</span>
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Scegli la soluzione perfetta per il tuo evento. Trasporto, montaggio e spiegazione inclusi nel prezzo per tutta Palermo e provincia.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Package 1: Basic -->
+                <div class="bg-neon-card rounded-3xl p-8 border border-white/10 flex flex-col justify-between hover:border-neon-cyan/50 transition duration-300 relative group">
+                    <div>
+                        <div class="text-neon-cyan text-sm font-bold tracking-wider uppercase mb-2">Per Piccole Feste & Private</div>
+                        <h3 class="font-heading text-2xl font-bold mb-4">Party Basic</h3>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-4xl font-extrabold font-heading">€120</span>
+                            <span class="text-gray-400 text-sm">/ evento</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 pb-6 border-b border-white/10">
+                            La combinazione ideale per chi vuole musica potente ed effetti luce senza ingombri in casa o in villa.
+                        </p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-cyan"></i>
+                                <span>1x Cassa Audio Bluetooth High-Power (800W)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-cyan"></i>
+                                <span>1x Microfono Wireless per Karaoke</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-cyan"></i>
+                                <span>2x Faretti LED RGB Strobo Reattivi alla musica</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-cyan"></i>
+                                <span>Cavi e stativi inclusi</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-500">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                                <span>Photobooth non incluso</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openBookingModal('Party Basic', 120)" class="w-full py-3.5 px-6 rounded-xl bg-white/10 hover:bg-neon-cyan hover:text-black font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+                        Prenota Party Basic
+                    </button>
+                </div>
+
+                <!-- Package 2: VIP (Bestseller) -->
+                <div class="bg-gradient-to-b from-neon-card via-neon-card to-neon-purple/20 rounded-3xl p-8 border-2 border-neon-magenta flex flex-col justify-between shadow-neon-magenta relative transform lg:-translate-y-4">
+                    <!-- Bestseller Tag -->
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-neon-magenta to-neon-purple text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                        🔥 Il Più Richiesto a Palermo
+                    </div>
+
+                    <div>
+                        <div class="text-neon-magenta text-sm font-bold tracking-wider uppercase mb-2 mt-2">Format Virale per 18esimi & Lauree</div>
+                        <h3 class="font-heading text-3xl font-extrabold mb-4">VIP 360 Experience</h3>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-5xl font-black font-heading text-white">€290</span>
+                            <span class="text-gray-400 text-sm">/ evento</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-6 pb-6 border-b border-white/10">
+                            Crea ricordi indimenticabili con la piattaforma Photobooth 360 e un audio d'impatto con effetti speciali.
+                        </p>
+                        
+                        <ul class="space-y-3.5 text-sm text-gray-200 mb-8">
+                            <li class="flex items-center gap-3 font-semibold text-white">
+                                <i class="fa-solid fa-star text-neon-magenta"></i>
+                                <span><strong>Platform Photobooth 360 Video HD</strong> (fino a 4 persone)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-magenta"></i>
+                                <span>Operatore Dedicato per la Gestione Video 360</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-magenta"></i>
+                                <span>1x Cassa DJ Pro Bluetooth (1200W RMS)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-magenta"></i>
+                                <span>Macchina del Fumo o Bolle di Sapone</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-magenta"></i>
+                                <span>Set Prop Divertenti (occhiali, cappelli, pistole bolle)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-magenta"></i>
+                                <span>Scarico immediato dei video via QR-Code</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openBookingModal('VIP 360 Experience', 290)" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-neon-magenta to-neon-purple text-white font-black text-base shadow-lg hover:opacity-95 transition transform active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Blocca Questo Pacchetto
+                    </button>
+                </div>
+
+                <!-- Package 3: Ultra Club -->
+                <div class="bg-neon-card rounded-3xl p-8 border border-white/10 flex flex-col justify-between hover:border-neon-purple/50 transition duration-300 relative">
+                    <div>
+                        <div class="text-neon-purple text-sm font-bold tracking-wider uppercase mb-2">Grandi Eventi & Matrimoni</div>
+                        <h3 class="font-heading text-2xl font-bold mb-4">Ultra Club & Wedding</h3>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-4xl font-extrabold font-heading">€450</span>
+                            <span class="text-gray-400 text-sm">/ evento</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 pb-6 border-b border-white/10">
+                            La configurazione definitiva per trasformare qualsiasi location o villa in una vera e propria discoteca.
+                        </p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-purple"></i>
+                                <span>Photobooth 360 + Operatore Dedicato</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-purple"></i>
+                                <span>Impianto Audio Potenziato 2.1 (2500W con Subwoofer)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-purple"></i>
+                                <span>Videoproiettore Full HD + Schermo 100" per Proiezioni/Video Ricordi</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-purple"></i>
+                                <span>2x Macchine Scintille Fredde (Sparkular per taglio torta)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-neon-purple"></i>
+                                <span>Architettura Luci Laser & Moving Heads</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openBookingModal('Ultra Club & Wedding', 450)" class="w-full py-3.5 px-6 rounded-xl bg-white/10 hover:bg-neon-purple hover:text-white font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+                        Richiedi Ultra Club
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="come-funziona" class="py-16 bg-white/[0.02] border-y border-white/10 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="font-heading text-3xl font-extrabold">Noleggiare è Semplice in <span class="gradient-text-cyan">3 Passaggi</span></h2>
+                <p class="text-gray-400 text-sm">Pensiamo a tutto noi per garantirti la massima tranquillità durante la festa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-neon-card p-8 rounded-2xl border border-white/5 text-center space-y-4 relative">
+                    <div class="w-16 h-16 bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan text-2xl font-black rounded-2xl flex items-center justify-center mx-auto">
+                        1
+                    </div>
+                    <h3 class="font-heading text-xl font-bold">Scegli & Blocca la Data</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Seleziona il pacchetto o i singoli prodotti che preferisci e verifica la disponibilità per il tuo giorno su Palermo o provincia.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-neon-card p-8 rounded-2xl border border-white/5 text-center space-y-4 relative">
+                    <div class="w-16 h-16 bg-neon-magenta/10 border border-neon-magenta/30 text-neon-magenta text-2xl font-black rounded-2xl flex items-center justify-center mx-auto">
+                        2
+                    </div>
+                    <h3 class="font-heading text-xl font-bold">Consegna & Setup Rapido</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Arriviamo nella tua location all'ora concordata. Montiamo l'attrezzatura e ti mostriamo i comandi semplici "Plug & Play".
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-neon-card p-8 rounded-2xl border border-white/5 text-center space-y-4 relative">
+                    <div class="w-16 h-16 bg-neon-purple/10 border border-neon-purple/30 text-neon-purple text-2xl font-black rounded-2xl flex items-center justify-center mx-auto">
+                        3
+                    </div>
+                    <h3 class="font-heading text-xl font-bold">Fai Festa & Ritiro</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Goditi il tuo evento in totale spensieratezza! A fine festa o il giorno seguente passeremo a smontare e ritirare tutto.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INDIVIDUAL PRODUCTS CATALOG SECTION -->
+    <section id="catalogo" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <div class="text-neon-cyan text-xs font-bold uppercase tracking-widest mb-1">Componi Il Tuo Setup</div>
+                    <h2 class="font-heading text-3xl font-extrabold">Prodotti Singoli Noleggiabili</h2>
+                </div>
+                <p class="text-gray-400 text-sm max-w-md">
+                    Puoi noleggiare anche singoli articoli per arricchire una festa già organizzata.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1 -->
+                <div class="bg-neon-card rounded-2xl border border-white/10 overflow-hidden group hover:border-white/30 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80" alt="Photobooth 360 Palermo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neon-green text-xs font-bold px-2.5 py-1 rounded-full">
+                            Disponibile
+                        </span>
+                    </div>
+                    <div class="p-5 space-y-3">
+                        <h3 class="font-heading font-bold text-lg">Platform Photobooth 360</h3>
+                        <p class="text-gray-400 text-xs">Piattaforma rotante con braccio per video slow-motion HD + Ring Light integrato.</p>
+                        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+                            <div>
+                                <span class="text-xs text-gray-400">Da</span>
+                                <span class="text-xl font-bold text-neon-magenta font-heading"> €180</span>
+                            </div>
+                            <button onclick="openBookingModal('Photobooth 360 (Singolo)', 180)" class="text-xs bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-3 rounded-lg transition">
+                                Aggiungi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-neon-card rounded-2xl border border-white/10 overflow-hidden group hover:border-white/30 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Cassa Audio Feste Palermo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-3">
+                        <h3 class="font-heading font-bold text-lg">Cassa JBL PartyBox 710</h3>
+                        <p class="text-gray-400 text-xs">800W RMS di potenza con giochi di luce RGB sincronizzati, ruote e ingressi microfono/chitarra.</p>
+                        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+                            <div>
+                                <span class="text-xs text-gray-400">Da</span>
+                                <span class="text-xl font-bold text-neon-cyan font-heading"> €70</span>
+                            </div>
+                            <button onclick="openBookingModal('Cassa JBL PartyBox 710', 70)" class="text-xs bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-3 rounded-lg transition">
+                                Aggiungi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-neon-card rounded-2xl border border-white/10 overflow-hidden group hover:border-white/30 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="Effetti Fumo Scena Palermo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-3">
+                        <h3 class="font-heading font-bold text-lg">Macchina Fumo Basso & Bolle</h3>
+                        <p class="text-gray-400 text-xs">Effetto "camminata sulle nuvole" con fumo denso che resta a terra o cascata di bolle illuminati.</p>
+                        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+                            <div>
+                                <span class="text-xs text-gray-400">Da</span>
+                                <span class="text-xl font-bold text-neon-purple font-heading"> €50</span>
+                            </div>
+                            <button onclick="openBookingModal('Macchina Fumo Basso', 50)" class="text-xs bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-3 rounded-lg transition">
+                                Aggiungi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-neon-card rounded-2xl border border-white/10 overflow-hidden group hover:border-white/30 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80" alt="Videoproiettore Eventi Palermo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-3">
+                        <h3 class="font-heading font-bold text-lg">Proiettore HD + Telo 100"</h3>
+                        <p class="text-gray-400 text-xs">Perfetto per proiettare video-ricordo per compleanni o lauree in ville o sale ricevimenti.</p>
+                        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+                            <div>
+                                <span class="text-xs text-gray-400">Da</span>
+                                <span class="text-xl font-bold text-neon-green font-heading"> €60</span>
+                            </div>
+                            <button onclick="openBookingModal('Proiettore HD + Telo', 60)" class="text-xs bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-3 rounded-lg transition">
+                                Aggiungi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CALCULATION & BOOKING FORM -->
+    <section id="preventivo" class="py-20 bg-gradient-to-b from-black via-neon-card/80 to-black relative">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="glass-surface bg-neon-card border border-white/15 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-60 h-60 bg-neon-magenta/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center space-y-3 mb-8">
+                    <span class="text-neon-cyan font-bold text-xs uppercase tracking-widest">Richiesta disponibilità</span>
+                    <h2 class="font-heading text-2xl sm:text-4xl font-extrabold">Richiedi disponibilità e preventivo</h2>
+                    <p class="text-gray-400 text-sm">Il team verificherà la data e ti risponderà su WhatsApp.</p>
+                </div>
+
+                <form id="booking-form" onsubmit="submitFormToWhatsApp(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Il Tuo Nome e Cognome</label>
+                            <input type="text" id="cust-name" required placeholder="Es. Marco Rossi" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Numero di Telefono / WhatsApp</label>
+                            <input type="tel" id="cust-phone" required placeholder="Es. 333 1234567" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition">
+                        </div>
+
+                        <!-- Event Date -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Data dell'Evento</label>
+                            <input type="date" id="cust-date" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition">
+                        </div>
+
+                        <!-- Location City in Palermo Province -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Comune dell'Evento (PA)</label>
+                            <select id="cust-city" required class="w-full bg-neon-card border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition">
+                                <option value="" disabled selected>Seleziona il comune...</option>
+                                <option value="Palermo Centro">Palermo Centro</option>
+                                <option value="Mondello / Sferracavallo">Mondello / Sferracavallo</option>
+                                <option value="Carini / Villagrazia">Carini / Villagrazia di Carini</option>
+                                <option value="Bagheria / Santa Flavia">Bagheria / Santa Flavia</option>
+                                <option value="Monreale / San Giuseppe J.">Monreale</option>
+                                <option value="Misilmeri / Belmonte">Misilmeri</option>
+                                <option value="Cefalù / Termini Imerese">Cefalù / Termini Imerese</option>
+                                <option value="Altro Comune Provincia PA">Altro Comune in Provincia di Palermo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Package Selection -->
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Pacchetto o Attrezzatura Desiderata</label>
+                        <select id="cust-package" required class="w-full bg-neon-card border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition">
+                            <option value="Party Basic (€120)">Party Basic (€120)</option>
+                            <option value="VIP 360 Experience (€290)" selected>VIP 360 Experience (€290) - consigliato</option>
+                            <option value="Ultra Club & Wedding (€450)">Ultra Club & Wedding (€450)</option>
+                            <option value="Singolo: Photobooth 360 (€180)">Photobooth 360 Singolo (€180)</option>
+                            <option value="Singolo: Cassa JBL 710 (€70)">Cassa JBL PartyBox 710 (€70)</option>
+                            <option value="Personalizzato / Più Prodotti">Richiesta Personalizzata</option>
+                        </select>
+                    </div>
+
+                    <!-- Notes -->
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Dettagli Aggiuntivi (Tipo di festa, location, orari)</label>
+                        <textarea id="cust-notes" rows="3" placeholder="Es. Diciottesimo in villa a Carini, inizio ore 20:00..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-neon-magenta text-white transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-neon-magenta via-neon-purple to-neon-cyan text-white font-extrabold text-base shadow-neon-magenta hover:opacity-95 transition transform active:scale-98 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Invia richiesta su WhatsApp
+                    </button>
+                    <p class="text-[11px] text-gray-500 text-center">La disponibilità va confermata dal team: il controllo non blocca la data. Inviando la richiesta si aprirà WhatsApp. <a href="privacy.html" class="text-neon-cyan underline underline-offset-2">Informativa privacy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER FEEDBACK -->
+    <section id="feedback" class="scroll-mt-36 py-20 bg-white/[0.02] border-y border-white/10 reveal-on-scroll">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-10 space-y-3">
+                <span class="text-neon-cyan text-xs font-bold uppercase tracking-widest">La tua esperienza</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold">Com'è andata la tua festa?</h2>
+                <p class="text-gray-400 text-sm">Il tuo feedback ci aiuta a migliorare ogni evento.</p>
+            </div>
+
+            <form id="feedback-form" onsubmit="submitFeedbackToWhatsApp(event)" class="space-y-6">
+                <fieldset class="space-y-3">
+                    <legend class="block text-xs font-semibold text-gray-300 uppercase">La tua valutazione</legend>
+                    <div class="flex gap-2">
+                        <label class="cursor-pointer">
+                            <input class="peer sr-only" type="radio" name="feedback-rating" value="1" required>
+                            <span class="flex h-11 w-11 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-400 transition peer-checked:border-yellow-400/60 peer-checked:bg-yellow-400/10 peer-checked:text-yellow-300 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-neon-cyan"><i class="fa-solid fa-star" aria-hidden="true"></i><span>1</span></span>
+                            <span class="sr-only">1 stella su 5</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input class="peer sr-only" type="radio" name="feedback-rating" value="2">
+                            <span class="flex h-11 w-11 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-400 transition peer-checked:border-yellow-400/60 peer-checked:bg-yellow-400/10 peer-checked:text-yellow-300 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-neon-cyan"><i class="fa-solid fa-star" aria-hidden="true"></i><span>2</span></span>
+                            <span class="sr-only">2 stelle su 5</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input class="peer sr-only" type="radio" name="feedback-rating" value="3">
+                            <span class="flex h-11 w-11 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-400 transition peer-checked:border-yellow-400/60 peer-checked:bg-yellow-400/10 peer-checked:text-yellow-300 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-neon-cyan"><i class="fa-solid fa-star" aria-hidden="true"></i><span>3</span></span>
+                            <span class="sr-only">3 stelle su 5</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input class="peer sr-only" type="radio" name="feedback-rating" value="4">
+                            <span class="flex h-11 w-11 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-400 transition peer-checked:border-yellow-400/60 peer-checked:bg-yellow-400/10 peer-checked:text-yellow-300 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-neon-cyan"><i class="fa-solid fa-star" aria-hidden="true"></i><span>4</span></span>
+                            <span class="sr-only">4 stelle su 5</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input class="peer sr-only" type="radio" name="feedback-rating" value="5">
+                            <span class="flex h-11 w-11 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 text-sm text-gray-400 transition peer-checked:border-yellow-400/60 peer-checked:bg-yellow-400/10 peer-checked:text-yellow-300 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-neon-cyan"><i class="fa-solid fa-star" aria-hidden="true"></i><span>5</span></span>
+                            <span class="sr-only">5 stelle su 5</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div>
+                        <label for="feedback-name" class="mb-2 block text-xs font-semibold uppercase text-gray-300">Nome (facoltativo)</label>
+                        <input id="feedback-name" type="text" autocomplete="name" placeholder="Come vuoi essere chiamato?" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white transition focus:border-neon-magenta focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="feedback-event" class="mb-2 block text-xs font-semibold uppercase text-gray-300">Tipo di evento (facoltativo)</label>
+                        <select id="feedback-event" class="w-full rounded-xl border border-white/10 bg-neon-card px-4 py-3 text-sm text-white transition focus:border-neon-magenta focus:outline-none">
+                            <option value="">Seleziona un evento</option>
+                            <option>Compleanno</option>
+                            <option>18esimo</option>
+                            <option>Laurea</option>
+                            <option>Matrimonio</option>
+                            <option>Altro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="feedback-comment" class="mb-2 block text-xs font-semibold uppercase text-gray-300">Il tuo commento</label>
+                    <textarea id="feedback-comment" rows="4" required maxlength="1000" placeholder="Raccontaci cosa ti è piaciuto e cosa possiamo migliorare..." class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white transition focus:border-neon-magenta focus:outline-none"></textarea>
+                </div>
+
+                <label class="flex items-start gap-3 text-xs leading-relaxed text-gray-400">
+                    <input id="feedback-publish-consent" type="checkbox" class="mt-0.5 h-4 w-4 shrink-0 accent-neon-magenta">
+                    <span>Acconsento alla pubblicazione anonima del mio commento sul sito. La scelta è facoltativa.</span>
+                </label>
+
+                <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-neon-magenta via-neon-purple to-neon-cyan py-4 text-base font-extrabold text-white shadow-neon-magenta transition hover:opacity-95 active:scale-[0.99]">
+                    <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Invia feedback
+                </button>
+                <p class="text-center text-[11px] text-gray-500">Si aprirà WhatsApp con il messaggio precompilato. Il feedback non viene pubblicato automaticamente. <a href="privacy.html" class="text-neon-cyan underline underline-offset-2">Informativa privacy</a>.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section id="faq" class="py-20 border-t border-white/10">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-12 space-y-3">
+                <h2 class="font-heading text-3xl font-extrabold">Domande Frequenti (FAQ)</h2>
+                <p class="text-gray-400 text-sm">Tutto quello che c'è da sapere prima di noleggiare.</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="bg-neon-card border border-white/10 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-sm sm:text-base flex justify-between items-center text-white focus:outline-none">
+                        <span>Come funziona la consegna a Palermo e provincia?</span>
+                        <i class="fa-solid fa-chevron-down text-neon-magenta transition-transform"></i>
+                    </button>
+                    <div class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-white/5 leading-relaxed">
+                        Consegniamo direttamente sul luogo dell'evento (sia sale che ville private) a Palermo città e in tutti i comuni della provincia. Un nostro tecnico provvederà al montaggio e alla verifica del corretto funzionamento dell'attrezzatura.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-neon-card border border-white/10 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-sm sm:text-base flex justify-between items-center text-white focus:outline-none">
+                        <span>Serve una cauzione o garanzia per il noleggio?</span>
+                        <i class="fa-solid fa-chevron-down text-neon-magenta transition-transform"></i>
+                    </button>
+                    <div class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-white/5 leading-relaxed">
+                        Richiediamo semplicemente la firma di un contratto di noleggio e l'esibizione di un documento di identità in corso di validità. Non blocchiamo somme esagerate sulla carta.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-neon-card border border-white/10 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-sm sm:text-base flex justify-between items-center text-white focus:outline-none">
+                        <span>Per il Photobooth 360 è presente un operatore durante la festa?</span>
+                        <i class="fa-solid fa-chevron-down text-neon-magenta transition-transform"></i>
+                    </button>
+                    <div class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-white/5 leading-relaxed">
+                        Sì! Nel pacchetto VIP 360 è sempre compreso un nostro operatore specializzato che assiste gli invitati nell'uso della piattaforma, gestisce gli effetti video e aiuta le persone a scaricare i video istantaneamente sul cellulare via QR Code.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-neon-card border border-white/10 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-sm sm:text-base flex justify-between items-center text-white focus:outline-none">
+                        <span>È difficile collegare le casse al mio telefono?</span>
+                        <i class="fa-solid fa-chevron-down text-neon-magenta transition-transform"></i>
+                    </button>
+                    <div class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-white/5 leading-relaxed">
+                        Assolutamente no! Tutte le nostre casse sono dotate di connessione Bluetooth ultra-rapida. Ti basterà accendere la cassa e associarla al tuo smartphone o tablet in meno di 10 secondi per riprodurre le tue playlist Spotify o YouTube.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-white/10 pt-12 pb-8 text-gray-400 text-xs">
+        <div class="container mx-auto px-4">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="relative h-12 w-20 shrink-0 overflow-hidden" aria-hidden="true">
+                            <img src="logo-cassa.png" alt="" class="absolute left-[50px] top-1/2 w-[200px] max-w-none -translate-x-1/2 -translate-y-1/2">
+                            <span class="logo-wave logo-wave-inner"></span>
+                            <span class="logo-wave logo-wave-outer"></span>
+                        </span>
+                        <span class="font-heading font-extrabold text-lg text-white">PARTYRENT</span>
+                    </div>
+                    <p class="text-gray-400">Servizio leader nel noleggio di attrezzature per feste ed eventi in tutta la Provincia di Palermo.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Zone Servite</h4>
+                    <ul class="space-y-2">
+                        <li>Palermo Centro & Periferia</li>
+                        <li>Mondello & Zona Balneare</li>
+                        <li>Carini & Villagrazia</li>
+                        <li>Bagheria, Misilmeri & Ficarazzi</li>
+                        <li>Monreale & Terrasini</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Servizi Top</h4>
+                    <ul class="space-y-2">
+                        <li>Noleggio Photobooth 360</li>
+                        <li>Casse Audio Festività & DJ Set</li>
+                        <li>Effetti Scena & Fumo Basso</li>
+                        <li>Luci Disco & Laser Show</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Contatti Diretti</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-neon-cyan"></i> <a href="tel:+393914795664" class="text-gray-400 transition-colors hover:text-neon-cyan">+39 391 479 5664</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-neon-green"></i> Chat WhatsApp 24/7</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-neon-magenta"></i> <a href="mailto:pietrocandela05@gmail.com" class="text-gray-400 transition-colors hover:text-neon-magenta">pietrocandela05@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-6 text-center text-gray-500">
+                &copy; 2026 Party Rent Palermo - Tutti i diritti riservati. <a href="privacy.html" class="text-neon-cyan hover:text-white underline underline-offset-2">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-neon-card border border-white/20 rounded-3xl p-6 sm:p-8 max-w-md w-full relative space-y-6">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div>
+                <div class="text-neon-magenta font-bold text-xs uppercase tracking-wider mb-1">Conferma Selezione</div>
+                <h3 id="modal-title" class="font-heading font-extrabold text-2xl">Prenota Pacchetto</h3>
+                <p id="modal-price" class="text-neon-cyan font-bold text-lg mt-1">€0.00</p>
+            </div>
+
+            <p class="text-xs text-gray-300">
+                Stai per verificare la disponibilità del pacchetto selezionato per il tuo evento in provincia di Palermo.
+            </p>
+
+            <button onclick="scrollToFormFromModal()" class="w-full py-3.5 bg-gradient-to-r from-neon-magenta to-neon-purple text-white font-bold rounded-xl shadow-neon-magenta hover:opacity-90 transition">
+                Vai al Modulo di Prenotazione
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion toggle logic
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Booking Modal Logic
+        let selectedPackageName = '';
+
+        function openBookingModal(packageName, price) {
+            selectedPackageName = packageName;
+            document.getElementById('modal-title').innerText = packageName;
+            document.getElementById('modal-price').innerText = '€' + price + ' / evento';
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function scrollToFormFromModal() {
+            closeBookingModal();
+            const selectElem = document.getElementById('cust-package');
+            
+            // Set option if matching
+            for (let i = 0; i < selectElem.options.length; i++) {
+                if (selectElem.options[i].value.includes(selectedPackageName)) {
+                    selectElem.selectedIndex = i;
+                    break;
+                }
+            }
+
+            // Scroll to form section smoothly
+            document.getElementById('preventivo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function submitFeedbackToWhatsApp(e) {
+            e.preventDefault();
+
+            const rating = document.querySelector('input[name="feedback-rating"]:checked').value;
+            const name = document.getElementById('feedback-name').value.trim() || 'Preferisce restare anonimo';
+            const eventType = document.getElementById('feedback-event').value || 'Non specificato';
+            const comment = document.getElementById('feedback-comment').value.trim();
+            const publishConsent = document.getElementById('feedback-publish-consent').checked ? 'Sì' : 'No';
+            const message = [
+                'Ciao! Vorrei lasciare un feedback sul mio evento.',
+                '',
+                `Valutazione: ${rating}/5`,
+                `Nome: ${name}`,
+                `Tipo di evento: ${eventType}`,
+                `Commento: ${comment}`,
+                `Consenso alla pubblicazione anonima: ${publishConsent}`
+            ].join('\n');
+
+            window.open(`https://wa.me/393914795664?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        // WhatsApp Form Submission Generator
+        function submitFormToWhatsApp(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const date = document.getElementById('cust-date').value;
+            const city = document.getElementById('cust-city').value;
+            const packageVal = document.getElementById('cust-package').value;
+            const notes = document.getElementById('cust-notes').value;
+
+            const text = `Ciao! Vorrei verificare la disponibilità per un noleggio festa.%0A%0A` +
+                         `*Nome:* ${encodeURIComponent(name)}%0A` +
+                         `*Telefono:* ${encodeURIComponent(phone)}%0A` +
+                         `*Data Evento:* ${encodeURIComponent(date)}%0A` +
+                         `*Comune (PA):* ${encodeURIComponent(city)}%0A` +
+                         `*Pacchetto Richiesto:* ${encodeURIComponent(packageVal)}%0A` +
+                         `*Note:* ${encodeURIComponent(notes)}`;
+
+            window.open(`https://wa.me/393914795664?text=${text}`, '_blank');
+        }
+
+        // Set minimum date picker date to today
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('cust-date');
+            if (dateInput) {
+                const now = new Date();
+                const localToday = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
+                    .toISOString()
+                    .split('T')[0];
+                dateInput.setAttribute('min', localToday);
+            }
+
+            const revealSections = document.querySelectorAll('#pacchetti, #come-funziona, #catalogo, #preventivo, #feedback, #faq');
+            const revealCards = document.querySelectorAll('#pacchetti .grid > div, #catalogo .grid > div');
+            revealSections.forEach(section => section.classList.add('reveal-on-scroll'));
+            revealCards.forEach((card, index) => {
+                card.classList.add('interactive-card', 'reveal-on-scroll', `reveal-delay-${index % 3 + 1}`);
+            });
+
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+                return;
+            }
+
+            document.documentElement.classList.add('has-scroll-reveal');
+            const revealVisibleElements = () => {
+                const viewportHeight = window.innerHeight;
+                revealElements.forEach(element => {
+                    if (element.classList.contains('is-visible')) return;
+                    const bounds = element.getBoundingClientRect();
+                    if (bounds.top < viewportHeight - 24 && bounds.bottom > 24) {
+                        element.classList.add('is-visible');
+                    }
+                });
+            };
+
+            revealVisibleElements();
+            window.addEventListener('scroll', revealVisibleElements, { passive: true });
+            window.addEventListener('resize', revealVisibleElements);
+        });
+    </script>
+</body>
+</html>
